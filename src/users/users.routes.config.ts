@@ -29,7 +29,7 @@ export class UsersRoutes extends CommonRoutesConfig {
 
         await saveUser(user);
 
-        res.status(200).send(`User ${name} created. ${String(user)}`);
+        res.status(200).send(`User ${name} created`);
       });
 
     this.app.route('/users/:userId')
